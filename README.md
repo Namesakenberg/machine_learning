@@ -1,3 +1,6 @@
+## 📈 Supervised Machine Learning Workflow
+
+```mermaid
 flowchart TD
     %% Stages and pipeline
     subgraph " "
@@ -7,16 +10,19 @@ flowchart TD
     Env["Execution Environment\n(Jupyter + Python)"]:::env
     DataSources["Data Sources"]:::env
     FE["Preprocessing & Feature Engineering"]:::pre
+
     subgraph "Feature Selection"
         FS1["Checking Multicollinearity"]:::pre
         FS2["Wrapper Methods"]:::pre
         FS3["Embedded Methods"]:::pre
     end
+
     subgraph "Dimensionality Reduction (PCA)"
         PCA1["Kernel PCA"]:::pre
         PCA2["MNIST PCA"]:::pre
         PCA3["Wine Data PCA"]:::pre
     end
+
     subgraph "Model Training"
         subgraph "Regression Models"
             Reg1["Linear Regression"]:::model
@@ -31,6 +37,7 @@ flowchart TD
             Clf5["Ensemble Methods"]:::model
         end
     end
+
     MS["Model Selection &\nHyperparameter Tuning"]:::model
     Eval["Evaluation & Visualization"]:::eval
 
@@ -69,14 +76,14 @@ flowchart TD
     click FS2 "https://github.com/namesakenberg/machine_learning/blob/main/Feature_Selection/Wrapper_methods_feature_Selection.ipynb"
     click FS3 "https://github.com/namesakenberg/machine_learning/blob/main/Feature_Selection/embedded_methods_feature_selection.ipynb"
     click PCA1 "https://github.com/namesakenberg/machine_learning/blob/main/PCA/Kernel_PCA.ipynb"
-    click MS "https://github.com/namesakenberg/machine_learning/tree/main/Model selection techniques/"
+    click MS "https://github.com/namesakenberg/machine_learning/tree/main/Model%20selection%20techniques/"
     click Reg1 "https://github.com/namesakenberg/machine_learning/blob/main/Linear_Regression/myGdAlgorithms.ipynb"
     click Reg2 "https://github.com/namesakenberg/machine_learning/blob/main/Linear_Regression/polynomial_reg.ipynb"
     click Clf1 "https://github.com/namesakenberg/machine_learning/blob/main/KNN/KNN_example.ipynb"
     click Clf2 "https://github.com/namesakenberg/machine_learning/blob/main/SVM/Hard_and_soft_margin_SVM.ipynb"
-    click Clf3 "https://github.com/namesakenberg/machine_learning/blob/main/naive bayes/sentiment-analysis-imdb-naive-bayes.ipynb"
-    click Clf4 "https://github.com/namesakenberg/machine_learning/blob/main/Decision Trees/Decision_trees_example.ipynb"
-    click Clf5 "https://github.com/namesakenberg/machine_learning/blob/main/Ensemble learning/bagging/Bagging.ipynb"
+    click Clf3 "https://github.com/namesakenberg/machine_learning/blob/main/naive%20bayes/sentiment-analysis-imdb-naive-bayes.ipynb"
+    click Clf4 "https://github.com/namesakenberg/machine_learning/blob/main/Decision%20Trees/Decision_trees_example.ipynb"
+    click Clf5 "https://github.com/namesakenberg/machine_learning/blob/main/Ensemble%20learning/bagging/Bagging.ipynb"
 
     %% Styles
     classDef env fill:#DDDDDD,stroke:#888,stroke-width:1px,stroke-dasharray: 5 5,rx:8,ry:8;
